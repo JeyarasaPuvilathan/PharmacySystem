@@ -1,0 +1,219 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@model IPagedList<AdminLTE_Template1.Models.MedicineDetail>
+@*@{
+        Layout ="~/Views/Shared/_LayoutMedincinesIndex.cshtml" ;
+    }*@
+<a href="~/Views/Shared/_Header.cshtml"></a>
+<link href="~/Content/Site.css" rel="stylesheet" />
+
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Medicines </title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    @*<link rel="stylesheet" href="/resources/demos/style.css">*@
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+    @*<script>
+            $(function () {
+                $("#dialog").dialog(
+                    {
+                        modal: true,
+                        buttons: {
+                            Ok: function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+            })
+        </script>*@
+</head>
+<body>
+
+
+</body>
+</html>
+
+
+@using (Html.BeginForm("Index", "Medicines", FormMethod.Get))
+{
+    <h3> Search Option:</h3>
+    @Html.RadioButton("option", "MedicineName", true)
+    <text>MedicineName</text>
+    @Html.RadioButton("option", "CategoryID")
+    <text> CategoryID </text>
+    @Html.TextBox("search")
+    <input type="submit"
+           name="submit"
+           value="Search" />
+}
+@if (Model.Count() == 0)
+{
+    <h3 style="color:red">Records not found</h3>
+    <script type="text/javascript">
+        document.write('<a href="' + document.referrer + '">Go Back</a>');
+    </script>
+}
+    @*<h3 style="color:red">@ViewData["ErrorMessage"]</h3>*@
+    <h3><em>Medicines</em> Details</h3>
+    @foreach (var item in Model)
+    {
+        if (item.Quantity < 2)
+        {
+            @*<div id="dialog" title="Quantity is Low">*@
+    foreach (var item1 in Model)
+    {
+     
+        if (item1.Quantity < 2)
+        {
+           
+                        <div id="boxes">
+                            <div id="dialog" class="window">
+                                Your Content Goes Here<button i="close" class="ui-dialog-close">&#215;</button>
+                                <h3>Your Account Is blocked</h3>
+                                <a href="@Url.Action("index", "Home")">@item1.MedicineName</a><br />
+                                @item1.Quantity
+                                <div id="popupfoot">
+                                    <a href="#" class="close agree">I agree</a> | <a class="agree" style="color:red;" href="#">I do not agree</a>
+                                </div>
+                            </div>
+                            <div id="mask"></div>
+                        </div>
+
+
+
+        }
+
+    }
+            @*</div>*@
+        }
+        <div class="genre">
+            <ul id="Medicine_View">
+
+                <li>
+                    <a href="@Url.Action("Details", new { id = item.M_ID })">
+                        <img alt="@item.MedicineName" src="~/Content/img/@item.Image" width="100" height="100" />
+                        <span>@item.MedicineName</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    }
+    <div class="row">
+        <div class="col-sm-12">
+
+            <div style="text-align:left">
+                @Html.PagedListPager(Model, pageNumber => Url.Action("Index", new
+       {
+           pageNumber,
+           option = Request.QueryString["option"],
+           search = Request.QueryString["search"]
+       }))
+            </div>
+        </div>
+
+
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <input type="button" class="btn-danger" style="width:100%;height:50px;display:block" value="Account" onclick="location.href='@Url.Action("Index", "CreatePDF") '" />
+        </div>
+        @*<div class="col-lg-6">
+            <input type="button" class="btn-danger" style="width:100%;height:50px;display:block" value="High chart" onclick="location.href='@Url.Action("CharterColumn", "CreatePDF") '" />
+        </div>*@
+    </div>
+    <style>
+        #mask {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 9000;
+            background-color: #000;
+            display: none;
+        }
+
+        #boxes .window {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 440px;
+            height: 500px;
+            display: none;
+            z-index: 9999;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        #boxes #dialog {
+            width: 450px;
+            height: 500px;
+            padding: 10px;
+            background-color: #ffffff;
+            font-family: 'Segoe UI Light', sans-serif;
+            font-size: 15pt;
+        }
+
+        #popupfoot {
+            font-size: 16pt;
+            position: absolute;
+            bottom: 0px;
+            width: 250px;
+            left: 70px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+
+
+            var id = '#dialog';
+
+            //Get the screen height and width
+            var maskHeight = $(document).height();
+            var maskWidth = $(window).width();
+
+            //Set heigth and width to mask to fill up the whole screen
+            $('#mask').css({ 'width': maskWidth, 'height': maskHeight });
+
+            //transition effect
+            $('#mask').fadeIn(500);
+            $('#mask').fadeTo("slow", 0.9);
+
+            //Get the window height and width
+            var winH = $(window).height();
+            var winW = $(window).width();
+
+            //Set the popup window to center
+            $(id).css('top', winH / 2 - $(id).height() / 2);
+            $(id).css('left', winW / 2 - $(id).width() / 2);
+
+            //transition effect
+            $(id).fadeIn(2000);
+
+            //if close button is clicked
+            $('.window .close').click(function (e) {
+                //Cancel the link behavior
+                e.preventDefault();
+
+                $('#mask').hide();
+                $('.window').hide();
+            });
+            $('.ui-dialog-close').click(function (e) {
+                e.preventDefault();
+                $('#mask').hide();
+                $('.window').hide();
+            });
+
+            //if mask is clicked
+            $('#mask').click(function () {
+                $(this).hide();
+                $('.window').hide();
+            });
+        }
+        )
+    </script>

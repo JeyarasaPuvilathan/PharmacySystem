@@ -1,0 +1,282 @@
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\csc.exe
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\csc.exe.config
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\csc.rsp
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\csi.exe
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\csi.rsp
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\System.AppContext.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\vbc.exe
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\vbc.exe.config
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\vbc.rsp
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\VBCSCompiler.exe
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\AdminLTE Template1.dll.config
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\AdminLTE Template1.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\AdminLTE Template1.pdb
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\Antlr3.Runtime.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\EntityFramework.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\Newtonsoft.Json.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\RouteJs.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\RouteJs.Mvc5.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Helpers.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Mvc.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Optimization.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Razor.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Webpages.Deployment.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Webpages.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Webpages.Razor.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\WebActivatorEx.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\WebGrease.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\Antlr3.Runtime.pdb
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\EntityFramework.xml
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\Newtonsoft.Json.xml
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Optimization.xml
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Razor.xml
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Webpages.xml
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Webpages.Deployment.xml
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Webpages.Razor.xml
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Helpers.xml
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Mvc.xml
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\obj\Debug\AdminLTE Template1.dll
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\obj\Debug\AdminLTE Template1.pdb
+C:\Users\jana\Documents\Visual Studio 2013\Projects\AdminLTE Template1\AdminLTE Template1\obj\Debug\PharmacySystem.csprojResolveAssemblyReference.cache
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\csc.exe
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\csc.exe.config
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\csc.rsp
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\csi.exe
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\csi.rsp
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\System.AppContext.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\vbc.exe
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\vbc.exe.config
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\vbc.rsp
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\VBCSCompiler.exe
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\AdminLTE Template1.dll.config
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\AdminLTE Template1.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\AdminLTE Template1.pdb
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\Antlr3.Runtime.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\EntityFramework.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\Newtonsoft.Json.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\RouteJs.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\RouteJs.Mvc5.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Helpers.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Mvc.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Optimization.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Razor.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Webpages.Deployment.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Webpages.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Webpages.Razor.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\WebActivatorEx.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\WebGrease.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\Antlr3.Runtime.pdb
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\EntityFramework.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\Newtonsoft.Json.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Optimization.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Razor.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Webpages.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Webpages.Deployment.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Webpages.Razor.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Helpers.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\System.Web.Mvc.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\obj\Debug\PharmacySystem.csprojResolveAssemblyReference.cache
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\obj\Debug\AdminLTE Template1.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\obj\Debug\AdminLTE Template1.pdb
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\EntityFramework.SqlServer.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\EntityFramework.SqlServer.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\PagedList.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\PagedList.Mvc.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\PagedList.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\AdminLTE Template1\AdminLTE Template1\bin\PagedList.Mvc.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\csc.exe
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\csc.exe.config
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\csc.rsp
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\csi.exe
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\csi.rsp
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\System.AppContext.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\vbc.exe
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\vbc.exe.config
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\vbc.rsp
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\VBCSCompiler.exe
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\AdminLTE Template1.dll.config
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\AdminLTE Template1.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\AdminLTE Template1.pdb
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\Antlr3.Runtime.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\EntityFramework.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\EntityFramework.SqlServer.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\Newtonsoft.Json.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\PagedList.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\PagedList.Mvc.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\RouteJs.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\RouteJs.Mvc5.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\System.Web.Helpers.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\System.Web.Mvc.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\System.Web.Optimization.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\System.Web.Razor.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\System.Web.Webpages.Deployment.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\System.Web.Webpages.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\System.Web.Webpages.Razor.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\WebActivatorEx.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\WebGrease.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\Antlr3.Runtime.pdb
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\EntityFramework.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\EntityFramework.SqlServer.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\Newtonsoft.Json.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\PagedList.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\PagedList.Mvc.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\System.Web.Optimization.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\System.Web.Razor.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\System.Web.Webpages.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\System.Web.Webpages.Deployment.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\System.Web.Webpages.Razor.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\System.Web.Helpers.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\System.Web.Mvc.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\obj\Debug\PharmacySystem.csprojResolveAssemblyReference.cache
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\obj\Debug\AdminLTE Template1.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\obj\Debug\AdminLTE Template1.pdb
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\Microsoft.Owin.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\Microsoft.Owin.Security.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\Owin.dll
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\Microsoft.Owin.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\jana\Desktop\Pharmacy Monitor\PharmacySystem\AdminLTE Template1\bin\Microsoft.Owin.Security.xml
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\csc.exe
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\csc.exe.config
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\csc.rsp
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\csi.exe
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\csi.rsp
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\System.AppContext.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\vbc.exe
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\vbc.exe.config
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\vbc.rsp
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\VBCSCompiler.exe
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\AdminLTE Template1.dll.config
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\AdminLTE Template1.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\AdminLTE Template1.pdb
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\Antlr3.Runtime.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\EntityFramework.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\EntityFramework.SqlServer.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\Microsoft.Owin.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\Microsoft.Owin.Security.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\Newtonsoft.Json.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\Owin.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\PagedList.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\PagedList.Mvc.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\RouteJs.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\RouteJs.Mvc5.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\System.Web.Helpers.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\System.Web.Mvc.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\System.Web.Optimization.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\System.Web.Razor.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\System.Web.Webpages.Deployment.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\System.Web.Webpages.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\System.Web.Webpages.Razor.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\WebActivatorEx.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\WebGrease.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\Antlr3.Runtime.pdb
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\EntityFramework.xml
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\EntityFramework.SqlServer.xml
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\Microsoft.Owin.xml
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\Microsoft.Owin.Security.xml
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\Newtonsoft.Json.xml
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\PagedList.xml
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\PagedList.Mvc.xml
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\System.Web.Optimization.xml
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\System.Web.Razor.xml
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\System.Web.Webpages.xml
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\System.Web.Webpages.Deployment.xml
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\System.Web.Webpages.Razor.xml
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\System.Web.Helpers.xml
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\System.Web.Mvc.xml
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\obj\Debug\PharmacySystem.csprojResolveAssemblyReference.cache
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\obj\Debug\AdminLTE Template1.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\obj\Debug\AdminLTE Template1.pdb
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\itextsharp.dll
+C:\Users\jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\RazorPDF.dll
+C:\Users\Jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\NLog.config
+C:\Users\Jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\NLog.dll
+C:\Users\Jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\NLog.Web.dll
+C:\Users\Jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\NLog.xml
+C:\Users\Jana\Desktop\Pharmacy System\PharmacySystem\AdminLTE Template1\bin\NLog.Web.xml

@@ -1,0 +1,70 @@
+﻿@model AdminLTE_Template1.Models.MailModel
+
+<h3 style="color:blue;text-align:center">Send Mail To Medicine Supplier</h3>
+<p style="text-align:center"><img src="~/Content/img/mailanima.gif" width="200" height="140" /></p>
+<script src="~/Scripts/jquery-3.1.1.js"></script>
+<h2 style="color:red">@ViewBag.EmailNetConMsg</h2>
+@using (Html.BeginForm("index","SendMailer",FormMethod.Post,new { @enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="container">
+
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">To:</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input type="text" class="form-control" name="To" placeholder="Email">
+            </div>
+            @Html.ValidationMessageFor(model => model.To, "", new { @class = "text-danger" })
+        </div>
+
+        <br /><br />
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Subject:</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                <input type="text" class="form-control" name="Subject" placeholder="Title">
+            </div>
+        </div>
+        <br /><br />
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Body:</label>
+            @*<label for="subject">Subject</label>*@
+            <textarea id="subject" name="Body" placeholder="Description.." style="height:100px;width:940px"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2">Attachment:</label>
+
+
+            <input name="fileUploader" type="file" />
+
+        </div>
+        <br />
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Send" class="btn-danger" />
+            </div>
+        </div>
+    </div>
+
+}
+@if (ViewBag.Alert == 1)
+{
+    <SCRIPT TYPE="text/javascript">
+        window.alert("mail sent sucessfully")
+    </script>
+}
+@if (ViewBag.Alert == 2)
+{
+    <SCRIPT TYPE="text/javascript">
+        window.alert("Send mail Failed")
+    </SCRIPT>
+}
+
+@*@section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }*@

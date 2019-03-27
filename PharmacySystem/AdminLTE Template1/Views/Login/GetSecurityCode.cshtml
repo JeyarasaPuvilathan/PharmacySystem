@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+    Layout = "~/Views/Shared/LayoutForResetPassword.cshtml";
+}
+
+@using (Html.BeginForm("CheckForSecurityKey", "Login", FormMethod.Post))
+{
+    <div class="row">
+        <div class="col-md-offset-1 col-md-3">
+            <h3>Insert Code</h3>
+        </div>
+        <div class="col-md-8">
+            <input type="text" name="securityKey" /><span style="color:red">@ViewBag.WrongSecurityKey</span><br />
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-4 col-md-1">
+                <a href="@Url.Action("index","Login")" class="btn btn-primary">Cancel</a>
+            </div>
+            <div class="col-md-1">
+                <input type="submit" value="Next" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}

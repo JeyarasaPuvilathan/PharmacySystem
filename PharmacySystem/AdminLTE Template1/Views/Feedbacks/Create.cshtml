@@ -1,0 +1,61 @@
+﻿@model AdminLTE_Template1.Models.Feedback
+
+@{
+    Layout = null;
+}
+    <style>
+        body {
+            width: 65%;
+            background-image: url('../../Content/img/loginback.jpg');
+        }
+    </style>
+<link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+<title>Send Feedback</title>
+@*<video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="Traffic-blurred2.jpg" id="video-background">
+        <source src="~/Content/Traffic-blurred2.mp4" type="video/mp4" >
+    </video>*@
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+        <h4 style="color:cyan">Feedback</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2", @style = "color:cyan" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Remarks, htmlAttributes: new { @class = "control-label col-md-2", @style = "color:cyan" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Remarks, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Remarks, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label  class="control-label col-md-2" style="color:cyan">What is 12+48 equal to ?</label>
+            <div class="col-md-10">
+                <input type="text" id="txt" name="txt" /><span style="color:red">@ViewBag.Valid</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Send" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index","CustomerHome")
+</div>
+
+@*@section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }*@

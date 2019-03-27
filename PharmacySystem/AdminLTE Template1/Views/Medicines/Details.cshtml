@@ -1,0 +1,176 @@
+﻿@model AdminLTE_Template1.Models.MedicineDetail
+
+<div>
+    <h3 style="color:deeppink;text-align:center"><b><u>Medicine Details</u></b></h3>
+    <hr />
+    <dl class="dl-horizontal">
+        
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MedicineName)
+        </dt>
+
+
+        <dd>
+            @Html.DisplayFor(model => model.MedicineName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ManufacturedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ManufacturedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpiredDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExpiredDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dosage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dosage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CategoryDisease.CategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategoryDisease.CategoryName)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+
+        <dd>
+            <img alt="@Model.MedicineName" src="~/Content/img/@Model.Image" width="100" height="100" />
+        </dd>
+
+    </dl>
+</div>
+<p>
+    <div class="btn btn-info">
+        @Html.ActionLink("Edit", "Edit", new { id = Model.M_ID }) 
+        </div>|
+    <div class="btn btn-danger">
+        @Html.ActionLink("delete", "Delete", new { id = Model.M_ID }) 
+    </div>|
+    @*<td><a href="#" class="btn btn-danger" onclick="ConfirmDelete(@Model.M_ID)"><i class="glyphicon glyphicon-trash"></i></a></td>*@
+    <div class="btn btn-info">
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</p>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<script src="~/Scripts/bootstrap.js"></script>
+
+<div class="container" style="width:40%;margin-top:2%">
+    @*@ <table class="table table-responsive">
+            <tr>
+                <td>Name</td>
+                <td>Department</td>
+                <td>Address</td>
+                <td></td>
+            </tr>
+            <tbody>
+                @if (ViewBag.EmployeeList != null)
+                {
+                    foreach (var item in model)
+                    {
+                        <tr id="row_@item.EmployeeId">
+                            <td>@item.</td>
+                            <td>@item.DepartmentNamee</td>
+                            <td>@item.Address</td>
+                            <td><a href="#" class="btn btn-danger" onclick="ConfirmDelete(@item.EmployeeId)"><i class="glyphicon glyphicon-trash"></i></a></td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>*@
+    <input type="hidden" id="hiddenEmployeeId" />
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#" class="close" data-dismiss="modal">&times;</a>
+                    <h3 class="modal-title">Delete Employee</h3>
+                </div>
+                <div class="modal-body">
+                    <h4>Are you sure ? You wat delete this.</h4>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-primary" data-dismiss="modal">Cancel</a>
+                    <a href="#" class="btn btn-success" data-dismiss="modal" onclick="DeleteEmployee()">Confirm</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="loderDiv" style="text-align:center;display:none">
+    <img src="~/Content/ajax-loading.gif" />
+</div>
+<script>
+
+
+    var ConfirmDelete = function (employeeId) {
+        $("#hiddenEmployeeId").val(employeeId);
+        $("#myModal").modal('show');
+    }
+
+    var DeleteEmployee = function ()
+    {
+        $("#loderDiv").show();
+
+        var empId = $("#hiddenEmployeeId").val();
+
+        $.ajax({
+            type: "POST",
+            data: { m_ID: m_ID },
+            url: "/Medicines/DeleteInPopup",
+            success: function () {
+                $("#loderDiv").hide();
+                $("#myModal").modal("hide");
+                $("#row_" + m_ID).remove();
+
+            }
+
+
+        })
+
+    }
+</script>
+

@@ -1,0 +1,131 @@
+﻿@model AdminLTE_Template1.Models.CustomerLogin
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Registration</title>
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            width: 65%;
+            background-image: url('../../Content/img/loginback.jpg');
+        }
+
+        
+    .failed {
+        text-align: center;
+        border: solid 1px red;
+        width: 300px;
+        padding: 5px;
+        background-color: rgb(255,229,229);
+    }
+    </style>
+</head>
+<body>
+    
+    @if (ViewBag.Status != null && Convert.ToBoolean(ViewBag.Status))
+    {
+        if (ViewBag.Message != null)
+        {
+            <div class="alert alert-success">
+                <strong>Success!</strong>@ViewBag.Message
+            </div>
+        }
+    }
+    else
+    {
+        using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <div class="form-horizontal">
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="form-horizontal">
+                    <h4 style="color:green;text-align:center">Customer Registration</h4>
+                    <hr />
+                    @*@Html.ValidationSummary(true, "", new { @class = "text-danger" })*@
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2", @style = "color:cyan" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })<span style="color:red">@ViewBag.Emty</span><span style="color:red">@ViewBag.EmailValid</span>
+                            @*@Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })*@
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" ,@style ="color:cyan"})
+                        <div class="col-md-10">
+                            @Html.PasswordFor(model => model.Password, htmlAttributes: new { @class = "form-control", @style = "Width:100%" })<span style="color:red">@ViewBag.Password</span>
+                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2", @style = "color:cyan" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Age, htmlAttributes: new { @class = "control-label col-md-2", @style = "color:cyan" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Age, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Age, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    @*<div class="form-group">
+                        @Html.LabelFor(model => model.IsEmailVerified, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            <div class="checkbox">
+                                @Html.EditorFor(model => model.IsEmailVerified)
+                                @Html.ValidationMessageFor(model => model.IsEmailVerified, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.ActivationCode, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.ActivationCode, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.ActivationCode, "", new { @class = "text-danger" })
+                        </div>
+                    </div>*@
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Register" class="btn btn-primary" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+    <div>
+        @Html.ActionLink("Login", "Login")
+    </div>
+   
+        @*<div class="row" style="padding-bottom:10px">
+            <div class="col-md-offset-5 col-md-7">
+                <span class="failed">@ViewBag.Emty  </span>
+            </div>
+        </div>*@
+    
+</body>
+</html>
+
+@section Scripts{
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+}
+
+<h2 style="color:red">@ViewBag.EmailNetConMsg</h2>

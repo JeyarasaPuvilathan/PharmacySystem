@@ -1,0 +1,46 @@
+﻿@model IEnumerable<AdminLTE_Template1.Models.Log>
+<h3>Login Log Details</h3>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EventDateTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventLevel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MachineName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventMessage)
+        </th>
+       
+ 
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventDateTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventLevel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MachineName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventMessage)
+        </td>
+        
+       
+    </tr>
+}
+
+</table>

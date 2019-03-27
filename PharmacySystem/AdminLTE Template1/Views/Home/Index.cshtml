@@ -1,0 +1,88 @@
+﻿@model AdminLTE_Template1.Models.MedicineDetail
+
+<script src="~/Scripts/jquery-2.2.4.min.js"></script>
+@*<script>
+    $(document).ready(function () {
+        $.ajax({
+            url: 'Home/Index',
+            data:id=1,
+        }).done(function () {
+        });
+
+    });
+
+    //$( document ).ready(function() {
+    //    console.log( "ready!" );
+    //});
+
+</script>*@
+<link rel="shortcut icon" href="~/Content/img/favicon.ico" type="image/x-icon" />
+<title>
+    home
+</title>
+
+
+
+<div style="width: 100%; float:right">
+
+    <div class="slideshow-container windowHeight">
+
+        <div class="mySlides ">
+            <div class="numbertext"></div>
+            <img src="~/Content/img/wallpaper.jpg" width="1200" height="500" align="middle" />
+
+        </div>
+    </div>
+
+    <div class="mySlides ">
+        <div class="numbertext"></div>
+        <img src="~/Content/img/index2.jpg" width="1200" height="500" />
+
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="~/Content/img/index1.jpg" width="1200" height="500" />
+        @*<div class="text">
+                <h3>Higher Studies</h3>
+                <p>You want a place for your higher studies</p>
+            </div>*@
+    </div>
+
+</div>
+
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 3000);
+    }
+
+</script>

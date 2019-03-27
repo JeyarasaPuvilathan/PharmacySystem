@@ -1,0 +1,45 @@
+﻿@model IEnumerable<AdminLTE_Template1.Models.MedicineDetail>
+
+@{Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Total Cost Of Medicine Values in PDF</title>
+</head>
+<body>
+    <table border="1" width='500' bordercolor="RED">
+        <tr>
+            <td colspan="4" bgcolor="LightGreen" align="center" valign="top">Medicine Details @DateTime.Now.Year</td>
+        </tr>
+        <tr>
+            <td>@*@{ var rollNumber = Model.Select(z => z.RollNo).Take(1).ToArray();}Riyaz Akhter<br />RollNo:@rollNumber[0]*@</td>
+            <td colspan="3" align="left"><img src="@Server.MapPath("~/Content/img/gmail1.jpg")" width="100" height="100" /></td>
+        </tr>
+        <tr>
+            <td bgcolor="lightblue" align="center">@Html.DisplayNameFor(model => model.MedicineName)</td>
+            <td bgcolor="lightblue" align="center">@Html.DisplayNameFor(model => model.Quantity)</td>
+            <td bgcolor="lightblue" align="center">@Html.DisplayNameFor(model => model.Price)</td>
+            <td bgcolor="lightblue" align="center">@Html.DisplayName("Total")</td>
+        </tr>
+        @{decimal total = 0;}@foreach (var item in Model)
+        {
+            decimal x = Convert.ToDecimal(item.Price) * Convert.ToDecimal(item.Quantity);
+            <tr align="center">
+                <td align="center" height="50px">@Html.DisplayFor(modelItem => item.MedicineName)</td>
+                <td align="center">@Html.DisplayFor(modelItem => item.Quantity)</td>
+                <td align="center">@Html.DisplayFor(modelItem => item.Price)</td>
+                <td align="center">@x</td>
+            </tr>
+            
+            total = total + x;
+        }
+        <tr align="center">
+            <td></td>
+            <td colspan="2" align="center"><strong><font color="GREEN">Total</font></strong></td>
+            
+            <td>@total</td>
+        </tr>
+    </table>
+</body>
+</html>

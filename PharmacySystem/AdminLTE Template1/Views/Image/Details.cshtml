@@ -1,0 +1,74 @@
+﻿@model AdminLTE_Template1.Models.MedicineDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MedicineDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ManufacturedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ManufacturedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpiredDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExpiredDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dosage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dosage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Image)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MedicineName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MedicineName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CategoryDisease.CategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategoryDisease.CategoryName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.M_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

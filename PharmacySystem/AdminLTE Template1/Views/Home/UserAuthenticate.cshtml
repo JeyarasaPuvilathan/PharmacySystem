@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+@if (ViewBag.UserAuthenticate == "1")
+{
+    <script>
+
+        alert("Can't Access without login");
+
+    </script>
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UserAuthenticate</title>
+    <link rel="stylesheet" href="~/Content/css/bootstrap.css"/>
+</head>
+<body>
+    <div> 
+        <h2 class="bg-danger" style="text-align:center;color:red;height:80px">Can't Access without login</h2>
+    </div>
+</body>
+</html>

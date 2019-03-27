@@ -1,0 +1,52 @@
+﻿@model IEnumerable<AdminLTE_Template1.Models.Map>
+@*<h3 style="color:blue;text-align:center;padding-top:01px"><b>Location of Medicine Suppliers </b></h3>*@
+<link rel="stylesheet" type="text/css" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+<script type='text/javascript' src='http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js?2'></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<div id="map" style="height: 550px; border: 1px solid #AAA;">
+    <script type="text/javascript">
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(6.927079, 79.861244),
+                zoom: 10,
+            };
+            var map = new google.maps.Map(document.getElementById("map"), mapProp);
+
+            $(document).ready(function () {
+                var map = L.map('map', {
+
+                    center: [6.927079, 79.861244],
+                    minZoom: 0,
+                    zoom: 10
+                });
+                $.ajax({
+                    type: "POST",
+                    url: '/Maps/GetMap',
+                    success: function (data) {
+                        var result = JSON.stringify(data);
+                        for (var i = 0; i < result.length; ++i) {
+                            var popup = '<b>Name:</b> ' + data[i].Name +
+                            '<br/><b>Latitude:</b> ' + data[i].Latitude +
+                              '<br/><b>Longitude:</b> ' + data[i].Longtitude +
+                           '<br/><b>Location:</b> ' + data[i].Location;
+                            L.marker([data[i].Latitude, data[i].Longtitude])
+                                .bindPopup(popup)
+                               .addTo(map);
+                        }
+                    },
+                    error: function (xhr) {
+                        console.log(xhr.responseText);
+                        alert("Error has occurred..");
+                    }
+                });
+
+                L.tileLayer('http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
+                    attribution: '© <a href="http://osm.org/copyright" title="OpenStreetMap" target="_blank">OpenStreetMap</a> contributors | Tiles Courtesy of <a href="http://www.mapquest.com/" title="MapQuest" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" width="16" height="16">',
+                    subdomains: ['otile1', 'otile2', 'otile3', 'otile4']
+                }).addTo(map);
+            });
+        }
+    </script>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQZQNr9RhBOTmXqqlzQv9hLx2UEV6pHCw&callback=myMap"></script>

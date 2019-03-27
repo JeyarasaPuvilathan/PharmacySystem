@@ -1,0 +1,24 @@
+﻿@model IEnumerable<AdminLTE_Template1.Models.CategoryDisease>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("CategoryDiseases")
+        </th>
+        <th>@Html.DisplayName("Action")</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CategoryName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.C_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.C_ID })
+        </td>
+    </tr>
+}
+
+</table>

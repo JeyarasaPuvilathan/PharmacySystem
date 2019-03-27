@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+    ViewBag.Title = "VerifyAccount";
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<style>
+    body {
+        width: 65%;
+        background-image: url('../../Content/img/loginback.jpg');
+    }
+</style>
+<body>
+    <h2 style="color:cyan">Verify Account</h2>
+
+    @if (ViewBag.Status != null && Convert.ToBoolean(ViewBag.Status))
+    {
+        <div class="alert alert-success">
+            <strong>Success!</strong> Your account has been activated successfully. Click here to @Html.ActionLink("Login", "Login", "Customer")
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-danger">
+            <strong>Error!</strong> @ViewBag.Message
+        </div>
+    }
+</body>

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PharmacySystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AdminLogins">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DateOfBirth" Type="datetime" />
+    <Property Name="MobileNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Image" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="IsBlocked" Type="bit" />
+  </EntityType>
+  <EntityType Name="CategoryDiseases">
+    <Key>
+      <PropertyRef Name="C_ID" />
+    </Key>
+    <Property Name="C_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CustomerLogins">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Age" Type="int" />
+    <Property Name="IsEmailVerified" Type="bit" />
+    <Property Name="ActivationCode" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Demo_Events">
+    <Key>
+      <PropertyRef Name="EventID" />
+    </Key>
+    <Property Name="EventID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="200" />
+    <Property Name="StartAt" Type="datetime" Nullable="false" />
+    <Property Name="EndAt" Type="datetime" />
+    <Property Name="IsFullDay" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Feedbacks">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="DateTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Logins">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Logs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EventDateTime" Type="datetime" Nullable="false" />
+    <Property Name="EventLevel" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="MachineName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="EventMessage" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ErrorSource" Type="nvarchar" MaxLength="100" />
+    <Property Name="ErrorClass" Type="nvarchar" MaxLength="500" />
+    <Property Name="ErrorMethod" Type="nvarchar(max)" />
+    <Property Name="ErrorMessage" Type="nvarchar(max)" />
+    <Property Name="InnerErrorMessage" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Maps">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Latitude" Type="decimal" Precision="18" Scale="6" />
+    <Property Name="Longtitude" Type="decimal" Precision="18" Scale="6" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="Location" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MedicineDetails">
+    <Key>
+      <PropertyRef Name="M_ID" />
+    </Key>
+    <Property Name="M_ID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ManufacturedDate" Type="datetime" Nullable="false" />
+    <Property Name="ExpiredDate" Type="datetime" />
+    <Property Name="Dosage" Type="nvarchar" MaxLength="500" />
+    <Property Name="Image" Type="nvarchar" MaxLength="50" />
+    <Property Name="MedicineName" Type="varchar" MaxLength="30" />
+    <Property Name="CategoryID" Type="int" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="AddMonth" Type="varchar" MaxLength="50" />
+    <Property Name="IsDeleted" Type="bit" />
+  </EntityType>
+  <Association Name="FK_MedicineDetails_CategoryDisease">
+    <End Role="CategoryDiseases" Type="Self.CategoryDiseases" Multiplicity="0..1" />
+    <End Role="MedicineDetails" Type="Self.MedicineDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoryDiseases">
+        <PropertyRef Name="C_ID" />
+      </Principal>
+      <Dependent Role="MedicineDetails">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PharmacySystemModelStoreContainer">
+    <EntitySet Name="AdminLogins" EntityType="Self.AdminLogins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CategoryDiseases" EntityType="Self.CategoryDiseases" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CustomerLogins" EntityType="Self.CustomerLogins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Demo_Events" EntityType="Self.Demo_Events" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Feedbacks" EntityType="Self.Feedbacks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Logins" EntityType="Self.Logins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Logs" EntityType="Self.Logs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Maps" EntityType="Self.Maps" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MedicineDetails" EntityType="Self.MedicineDetails" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_MedicineDetails_CategoryDisease" Association="Self.FK_MedicineDetails_CategoryDisease">
+      <End Role="CategoryDiseases" EntitySet="CategoryDiseases" />
+      <End Role="MedicineDetails" EntitySet="MedicineDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

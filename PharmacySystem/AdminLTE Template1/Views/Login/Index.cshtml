@@ -1,0 +1,212 @@
+﻿@model AdminLTE_Template1.Models.AdminLogin
+
+@{
+    Layout = null;
+}
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js">
+</script>
+@*<script src="~/Scripts/jquery-3.1.1.min.js"></script>*@
+<link href="~/Content/css/stylelogin.css" rel="stylesheet" />
+<link href="~/Content/Site.css" rel="stylesheet" />
+<link href="~/Content/img/logo.jpg" rel="shortcut icon" type="image/x-icon" />
+<!DOCTYPE html>
+@*<script type="text/javascript"
+        src="@Url.Content("~/Content/js/spin.js")"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#submitbtn").click(function () {
+            $("#loder").show();
+            $("#loading").fadeIn();
+            var opts = {
+                lines: 12, // The number of lines to draw
+                length: 7, // The length of each line
+                width: 4, // The line thickness
+                radius: 10, // The radius of the inner circle
+                color: '#000', // #rgb or #rrggbb
+                speed: 1, // Rounds per second
+                trail: 60, // Afterglow percentage
+                shadow: false, // Whether to render a shadow
+<img src="~/Content/img/ajax-loading.gif" />
+                hwaccel: false // Whether to use hardware acceleration
+            };
+            var target = document.getElementById('loading');
+            var spinner = new Spinner(opts).spin(target);
+        });
+    });
+</script>*@
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+  $( function() {
+    $( "#dialog-message" ).dialog({
+      modal: true,
+      buttons: {
+        Ok: function() {
+          $( this ).dialog( "close" );
+        }
+      }
+    });
+  } );
+    </script>
+</head>
+@if (ViewBag.UserAuthenticate == "1")
+{
+  <div id="dialog-message" title="Authorised Failed">
+ 
+    <p style="padding-top:30px;color:#aa0000;font-size:large">
+        <span class="ui-icon ui-icon-locked" style="float:left; margin:0 7px 50px 0;"></span>
+        <b>Can't Access without login</b>
+    </p>
+    @*<p>
+        Currently using <b>36% of your storage space</b>.
+    </p>*@
+</div>
+}
+<div id="company_logo">
+
+    <h1 style="color:maroon;padding-top:70px;padding-left:70px;"><i>Wel Come To Pharmacy Monitor System</i></h1>
+    @Html.ValidationMessage("ModelName")
+    <p style='padding-top: 300px'><h3 style="color:red;">@ViewData["ErrorMessage"]</h3></p>
+
+    @using (Html.BeginForm("Index", "Login", new { returnUrl = Request.QueryString["ReturnUrl"] }, FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form">
+            <div class="forceColor"></div>
+            <div class="topbar">
+                <div class="spanColor"></div>
+                <input type="text" class="input" name="username" id="username" placeholder="Username"/>
+            </div>
+
+            <div class="topbar">
+                <div class="spanColor"></div>
+                <input type="password" class="input" name="password" id="password" placeholder="Password" />
+            </div>
+
+            <input class="submit" id="submitbtn" type="submit" value="Login"/>
+
+        </div>
+        <h2 style="color:red">@ViewBag.passwordEmpty</h2>
+        <h3><a href="@Url.Action("ForgotPassword","Login")">Forgot password  | </a><a href="@Url.Action("Registration","Customer")"> Register</a></h3>
+
+    }
+   
+
+   
+</div>
+<style>
+    #mask {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 9000;
+        background-color: #000;
+        display: none;
+    }
+
+    #boxes .window {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 440px;
+        height: 200px;
+        display: none;
+        z-index: 9999;
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    #boxes #dialog {
+        width: 450px;
+        height: 200px;
+        padding: 10px;
+        background-color: #ffffff;
+        font-family: 'Segoe UI Light', sans-serif;
+        font-size: 15pt;
+    }
+
+    #popupfoot {
+        font-size: 16pt;
+        position: absolute;
+        bottom: 0px;
+        width: 250px;
+        left: 70px;
+    }
+</style>
+<div id="boxes">
+    <div id="dialog" class="window">
+        <h2><b>Access Denied</b></h2><button i="close" class="ui-dialog-close">&#215;</button>
+        <h3>Your Account Is blocked</h3>
+        <h3>Go Through Forgot Password</h3>
+        <div id="popupfoot">
+            <a href="#" class="close agree">Done</a> @*| <a class="agree" style="color:red;" href="#">I do not agree</a>*@
+        </div>
+    </div>
+    <div id="mask"></div>
+</div>
+<script>
+    $(document).ready(function () {
+        if('@ViewBag.disabled' == "ON") {
+            $("#username").attr('disabled', true);
+            $("#password").attr('disabled', true);
+            $("#submitbtn").attr('disabled', true);
+
+
+            var id = '#dialog';
+
+            //Get the screen height and width
+            var maskHeight = $(document).height();
+            var maskWidth = $(window).width();
+
+            //Set heigth and width to mask to fill up the whole screen
+            $('#mask').css({ 'width': maskWidth, 'height': maskHeight });
+
+            //transition effect
+            $('#mask').fadeIn(500);
+            $('#mask').fadeTo("slow", 0.9);
+
+            //Get the window height and width
+            var winH = $(window).height();
+            var winW = $(window).width();
+
+            //Set the popup window to center
+            $(id).css('top', winH / 2 - $(id).height() / 2);
+            $(id).css('left', winW / 2 - $(id).width() / 2);
+
+            //transition effect
+            $(id).fadeIn(2000);
+
+            //if close button is clicked
+            $('.window .close').click(function (e) {
+                //Cancel the link behavior
+                e.preventDefault();
+
+                $('#mask').hide();
+                $('.window').hide();
+            });
+            $('.ui-dialog-close').click(function (e) {
+                e.preventDefault();
+                $('#mask').hide();
+                $('.window').hide();
+            });
+
+            //if mask is clicked
+            $('#mask').click(function () {
+                $(this).hide();
+                $('.window').hide();
+            });
+        }
+    })
+</script>
+
+ 
+@*<div id="container3">
+    <h2 style="color:green">Pharmacy Monitor System</h2>
+</div>*@

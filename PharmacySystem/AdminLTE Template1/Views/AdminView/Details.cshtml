@@ -1,0 +1,116 @@
+﻿@model AdminLTE_Template1.Models.AdminLogin
+    @{ 
+        Layout = null;
+    }
+<head><title>Admin Profile</title></head>
+<link href="~/Content/img/logo.jpg" rel="shortcut icon" type="image/x-icon" />
+<link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Content/css/AdminProfile.css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<div class="container">
+    <div class="fb-profile">
+        <img align="left" class="fb-image-lg" src="~/Content/img/AdminCover.jpg" alt="Profile Cover image" />
+        <img align="left" class="fb-image-profile thumbnail" src="~/Content/img/user.jpg" alt="Profile image" />
+        <div class="fb-profile-text">
+  
+            <h1>@Html.DisplayFor(model => model.UserName)</h1>
+            <p>Admin Of ABC Pharmcy</p>
+
+            <div class="TimeDisplay" style="color:green;font-size:large;text-align:center">
+                <script>
+
+                    var myDate = new Date();
+
+                    if (myDate.getHours() < 12) {
+
+                        document.write("Good Morning!             Welcome to Admin Profile");
+                    }
+                    else
+                        if (myDate.getHours() >= 12 && myDate.getHours() <= 17) {
+                            document.write("Good Afternoon!          Welcome to Admin Profile");
+                        }
+                        else
+                            if (myDate.getHours() > 17 && myDate.getHours() <= 24) {
+                                document.write("Good Evening!           Welcome to Admin Profile");
+                            }
+                            else {
+                                document.write("I'm not sure what time it is!");
+                            }
+
+                </script>
+            </div>
+
+
+            @*<div class="container">
+
+                <div class="col col-lg-6">*@
+            <br/>
+            <br/>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.UserName)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.UserName)
+                    </dd>
+                    <dt></dt><dd></dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.DateOfBirth)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.DateOfBirth)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.MobileNo)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.MobileNo)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Email)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Email)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.CreatedOn)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.CreatedOn)
+                    </dd>
+                @*</div>
+                <div class="col col-lg-4">*@
+                    @*<dt>
+                        @Html.DisplayName("Image")
+                    </dt>
+
+                    <dd>
+                        <img alt="@Model.UserName" src="@Url.Content(Model.Image)" width="150" height="150" />
+                    </dd>*@
+
+
+                    @*</dl>*@
+                @*</div>
+            </div>*@
+            @*<p style="text-align:center">
+                @Html.ActionLink("Edit", "Edit", new { id = Model.ID })
+
+            </p>*@
+            <input type="button" class="btn-danger"style="width:100%" value="Edit" onclick="location.href='@Url.Action("Edit", "AdminView", new { id = Model.ID } )'" />
+            <br /><br />
+            <input type="button" class="btn-success" style="width:100%" value="Home" onclick="location.href='@Url.Action("Index", "Home" )'" />
+            <br /><br />
+        </div>
+    </div>
+</div>
+
+    @*<p>
+        Loading, please wait...<img src="~/Content/img/ajax-loading.gif">
+    </p>*@
